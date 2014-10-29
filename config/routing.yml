@@ -1,0 +1,3 @@
+hammer663_FaqManager_main_controller:
+    pattern: /faq
+    defaults: { _controller: hammer663.FaqManager.controller:main }

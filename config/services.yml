@@ -1,0 +1,13 @@
+services:
+    hammer663.FaqManager.listener:
+        class: hammer663\FaqManager\event\listener
+        arguments:
+            - @auth
+            - @config
+            - @user
+            - @dbal.conn
+            - %core.root_path%
+            - %core.php_ext%
+            - @dispatcher
+        tags:
+            - { name: event.listener }	
